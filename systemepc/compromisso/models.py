@@ -35,3 +35,8 @@ class Compromisso(models.Model):
 
 	def __unicode__(self):
 		return u"00%s" % self.id
+
+def get_absolute_url(self):
+  	return '/Compromisso/%s/' % self.id
+
+

@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block title %}Lista de Compromissos{% endblock title %}
+{% block page_title %}Lista de Compromissos{% endblock page_title %}
+
+{% block content %}
+	{% for compromisso in object_list %}
+		<p>{{ compromisso.reuniao.date }}</p>
+	{% empty %}
+		<p> Nenhum compromisso encontrado.</p>
+	{% endfor %}
+{% endblock content %}

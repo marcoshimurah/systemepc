@@ -1,1 +1,6 @@
-# Create your views here.
+from django.views.generic import ListView
+from compromisso.models import Compromisso
+
+
+class CompromissoListView(ListView):
+	model = Compromisso
